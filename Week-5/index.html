@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Saffron Table, a modern restaurant experience. Browse the menu, learn our story, and request a table.">
+  <meta name="theme-color" content="#17231f">
+  <title>Saffron Table | A Modern Dining Experience</title>
+  <link rel="preload" href="assets/restaurant-hero.svg" as="image" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#app-main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Saffron Table home">
+      <span class="brand-mark" aria-hidden="true">ST</span>
+      <span>SAFFRON <em>TABLE</em></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#home" data-route="home">Home</a>
+      <a href="#menu" data-route="menu">Menu</a>
+      <a href="#story" data-route="story">Our Story</a>
+      <a href="#contact" data-route="contact">Contact</a>
+      <a class="nav-cta" href="#reservation" data-route="reservation">Reserve a Table</a>
+    </nav>
+  </header>
+
+  <main id="app-main" tabindex="-1">
+    <div id="page-content" aria-live="polite" aria-busy="false">
+      <!-- JavaScript renders the selected route here. -->
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">FRESH INGREDIENTS · THOUGHTFUL COOKING</p>
+          <h1>A table worth<br><span>gathering around.</span></h1>
+          <p class="hero-description">Seasonal plates, warm hospitality, and memorable moments—served fresh every day.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu">Explore the menu</a>
+            <a class="text-link" href="#story">Discover our story <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/restaurant-hero.svg" alt="Illustration of a thoughtfully arranged restaurant meal with fresh herbs and vegetables" width="760" height="620">
+          <span class="art-note">GOOD FOOD. GOOD COMPANY.</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div><a class="brand footer-brand" href="#home"><span class="brand-mark">ST</span><span>SAFFRON <em>TABLE</em></span></a><p>Made for moments around the table.</p></div>
+    <p>© <span id="year"></span> Saffron Table. Demo project.</p>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

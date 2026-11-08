@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620" role="img" aria-labelledby="title desc">
+<title id="title">Saffron Table meal illustration</title><desc id="desc">A cream plate with colourful vegetables and herbs on a green table.</desc>
+<rect width="760" height="620" fill="#dfe7d1"/><circle cx="380" cy="310" r="250" fill="#244b3b"/><circle cx="380" cy="310" r="205" fill="#f7f5ef"/><circle cx="380" cy="310" r="160" fill="#e8dfc9"/>
+<path d="M280 270c35-70 120-75 155-5 35 70-25 135-100 110-65-22-90-65-55-105Z" fill="#c78d4b"/>
+<path d="M350 190c-20 55 20 90 70 65 40-20 55-65 25-95-40-35-80-15-95 30Z" fill="#78965e"/>
+<path d="M250 360c45-55 100-30 100 20 0 50-65 70-100 30-15-18-15-35 0-50Z" fill="#d66f4d"/>
+<path d="M420 355c35-55 95-35 105 15 10 55-55 75-95 45-25-18-25-40-10-60Z" fill="#8aab70"/>
+<g fill="#244b3b"><ellipse cx="300" cy="210" rx="15" ry="35" transform="rotate(-35 300 210)"/><ellipse cx="460" cy="250" rx="13" ry="30" transform="rotate(45 460 250)"/><ellipse cx="400" cy="430" rx="13" ry="32" transform="rotate(-25 400 430)"/></g>
+<g fill="#e5b75e"><circle cx="340" cy="300" r="10"/><circle cx="445" cy="325" r="9"/><circle cx="310" cy="390" r="8"/><circle cx="390" cy="230" r="8"/></g>
+<path d="M80 80l70 25M610 510l75 25" stroke="#c78d4b" stroke-width="8" stroke-linecap="round"/>
+</svg>
