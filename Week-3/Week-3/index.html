@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saffron Table restaurant website with interactive menu and reservation form.">
+  <title>Saffron Table | Interactive Restaurant Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Saffron Table home">SAFFRON <span>TABLE</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#reservation">Reservations</a>
+    </nav>
+    <a class="header-cta" href="#reservation">Book a Table</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">FRESH INGREDIENTS · THOUGHTFUL COOKING</p>
+        <h1>Good food.<br><em>Beautiful moments.</em></h1>
+        <p class="hero-copy">A welcoming table, seasonal flavours and memorable meals shared with the people who matter.</p>
+        <a class="button button-light" href="#menu">Explore Our Menu</a>
+      </div>
+    </section>
+
+    <section class="intro section" id="story">
+      <p class="eyebrow">A LITTLE ABOUT US</p>
+      <h2>Made with care.<br><em>Served with warmth.</em></h2>
+      <p>At Saffron Table, we bring people together through honest ingredients, familiar flavours and a fresh approach to dining.</p>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading">
+        <div><p class="eyebrow">FROM OUR KITCHEN</p><h2>Explore the menu</h2></div>
+        <p>Choose a category to discover a few of our favourites.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter menu items">
+        <button class="filter-button active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-button" data-filter="starters" aria-pressed="false">Starters</button>
+        <button class="filter-button" data-filter="mains" aria-pressed="false">Main Course</button>
+        <button class="filter-button" data-filter="desserts" aria-pressed="false">Desserts</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card" data-category="starters"><div class="dish-number">01</div><p class="dish-type">STARTER</p><h3>Garden Crostini</h3><p>Toasted sourdough with seasonal vegetables and herbs.</p><strong>₹220</strong></article>
+        <article class="menu-card" data-category="starters"><div class="dish-number">02</div><p class="dish-type">STARTER</p><h3>Golden Corn Fritters</h3><p>Crisp corn bites served with a fresh house dip.</p><strong>₹190</strong></article>
+        <article class="menu-card" data-category="mains"><div class="dish-number">03</div><p class="dish-type">MAIN COURSE</p><h3>Smoky Paneer Bowl</h3><p>Grilled paneer, fragrant rice and seasonal greens.</p><strong>₹340</strong></article>
+        <article class="menu-card" data-category="mains"><div class="dish-number">04</div><p class="dish-type">MAIN COURSE</p><h3>Herb-Roasted Pasta</h3><p>Slow-roasted tomato sauce, herbs and parmesan.</p><strong>₹320</strong></article>
+        <article class="menu-card" data-category="desserts"><div class="dish-number">05</div><p class="dish-type">DESSERT</p><h3>Classic Tiramisu</h3><p>Layers of coffee-soaked sponge and mascarpone cream.</p><strong>₹180</strong></article>
+        <article class="menu-card" data-category="desserts"><div class="dish-number">06</div><p class="dish-type">DESSERT</p><h3>Warm Chocolate Cake</h3><p>Rich chocolate cake with a soft centre.</p><strong>₹200</strong></article>
+      </div>
+      <p class="empty-message" id="emptyMessage" hidden>No menu items found in this category.</p>
+    </section>
+
+    <section class="reservation-section section" id="reservation">
+      <div class="reservation-copy">
+        <p class="eyebrow">YOUR TABLE IS WAITING</p>
+        <h2>Make a reservation</h2>
+        <p>Send a request using the form. This demo validates your details and displays a confirmation on this page; it does not create a real booking.</p>
+      </div>
+      <form class="reservation-form" id="reservationForm" novalidate>
+        <div class="form-row">
+          <label for="guestName">Full name</label>
+          <input id="guestName" name="guestName" type="text" placeholder="Your name" required>
+          <small class="field-error" id="nameError"></small>
+        </div>
+        <div class="form-row">
+          <label for="guestEmail">Email address</label>
+          <input id="guestEmail" name="guestEmail" type="email" placeholder="you@example.com" required>
+          <small class="field-error" id="emailError"></small>
+        </div>
+        <div class="form-row split">
+          <div><label for="bookingDate">Date</label><input id="bookingDate" name="bookingDate" type="date" required><small class="field-error" id="dateError"></small></div>
+          <div><label for="guestCount">Guests</label><select id="guestCount" name="guestCount"><option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option></select></div>
+        </div>
+        <button class="button button-dark" type="submit">Send Reservation Request</button>
+        <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand-footer" href="#home">SAFFRON <span>TABLE</span></a>
+    <p>Good food. Beautiful moments.</p>
+    <p>© <span id="currentYear"></span> Saffron Table. Demo website for learning purposes.</p>
+  </footer>
+</body>
+</html>
