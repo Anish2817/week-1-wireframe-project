@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="520" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+<title id="title">Restaurant table illustration</title>
+<desc id="desc">A warm dining table with a plate, fork, knife and a vase of flowers.</desc>
+<rect width="720" height="520" rx="28" fill="#e9d8c2"/>
+<circle cx="360" cy="265" r="178" fill="#c78e6c" opacity=".35"/>
+<ellipse cx="355" cy="365" rx="260" ry="85" fill="#8a4a32"/>
+<ellipse cx="355" cy="330" rx="260" ry="85" fill="#b86d4c"/>
+<ellipse cx="355" cy="300" rx="125" ry="105" fill="#fffaf0"/>
+<ellipse cx="355" cy="300" rx="94" ry="77" fill="#e7c9a8"/>
+<ellipse cx="355" cy="300" rx="73" ry="59" fill="#fffaf0"/>
+<path d="M190 205v190M174 205v55m32-55v55M520 205v190m-16-190v65m32-65v65" stroke="#4b3529" stroke-width="8" stroke-linecap="round"/>
+<path d="M545 185c-42-15-70-2-75 28-4 25 17 42 42 35 28-8 43-36 33-63Z" fill="#66805b"/>
+<path d="M540 194c-14 40-31 67-57 87" fill="none" stroke="#466346" stroke-width="6"/>
+<path d="M565 175c23-27 54-23 62-2 8 22-12 43-38 39-20-3-32-19-24-37Z" fill="#7e9468"/>
+<path d="M574 182c-9 31-25 59-48 80" fill="none" stroke="#466346" stroke-width="6"/>
+<path d="M535 270h55l-8 88h-39Z" fill="#a8b9a1"/>
+<path d="M540 270h45" stroke="#fffaf0" stroke-width="5"/>
+</svg>
